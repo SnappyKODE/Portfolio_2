@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.project-sec{
+    z-index: 3;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @media (max-width: 599px) {
+      flex-direction: column;
+      padding: 60px 20px;
+      align-items: center;
+      gap: 10px;
+      height: fit-content;
+  }
+}
+
+.card {
+    padding: 20px;
+    z-index: 4;
+    width: 400px;
+    min-height: 30px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background: #212121;
+    box-shadow: 5px 5px 8px #1b1b1b,
+               -5px -5px 8px #272727;
+    transition: 0.4s;
+    @media (max-width: 599px) {
+      padding: 10px;
+      width: 80vw;
+      min-height: 10px;
+      translate: 0;
+    }
+    border: 2px solid ;
+
+}
+  
+  .card:hover {
+    translate: 0 -10px;
+    @media (max-width: 599px) {
+      translate: 0;
+    }
+  }
+  
+  .card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #b2eccf;
+    margin: 10px 0 0 10px;
+    @media (max-width: 599px) {
+      font-size: medium;
+      margin: 0 0 0 10px;
+    }
+  }
+  
+  .card-image {
+    height: 180px;
+    background-color: #313131;
+    border-radius: 15px;
+    background: #313131;
+    box-shadow: inset 5px 5px 3px #2f2f2f,
+              inset -5px -5px 3px #333333;
+    @media (max-width: 599px) {
+      height: 100px;
+    }
+
+        img{
+            width: 360px;
+            border-radius: 15px;
+            object-fit: contain;
+            @media (max-width: 599px) {
+              height: 100px;
+            }
+        }
+  }
+  
+  .card-body {
+    margin: 10px 0 0 10px;
+    color: rgb(184, 184, 184);
+    font-size: 15px;
+    @media (max-width: 599px) {
+      font-size: small;
+      margin: 8px 0 0 10px;
+    }
+  }
+  
+
+.btn-group{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    a{
+        background-color: #1b1b1b;
+        border: 1px solid white;
+        color: rgb(184, 184, 184);
+        border-radius: 5px;
+        width: 48%;
+        height: 30px;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+    }
+    @media (max-width: 599px) {
+      padding-top: 15px;
+    }
+}

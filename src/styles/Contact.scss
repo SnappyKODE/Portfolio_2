@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.Contact-sec{
+    z-index: 3;
+    padding: 80px 50px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 599px) {
+      flex-direction: column;
+      padding: 60px 20px;
+      align-items: center;
+      gap: 10px;
+      height: fit-content;
+  }
+
+  .contact_card{
+    padding: 20px;
+    z-index: 4;
+    width: 50vw;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    background: #212121;
+    box-shadow: 5px 5px 8px #1b1b1b,
+               -5px -5px 8px #272727;
+    transition: 0.4s;
+    @media (max-width: 599px) {
+      padding: 10px;
+      width: 80vw;
+      min-height: 10px;
+      translate: 0;
+    }
+    border: 2px solid ;
+
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    gap: 20px;
+
+    .input_field{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        label{
+            margin: 0 0 5px 5px ;
+        }
+        
+
+        input{
+            padding: 5px;
+            border-radius: 10px;
+        }
+        textarea{
+            padding: 5px;
+            border-radius: 10px;
+        }
+    }
+
+    .sub_btn{
+        background-color: #1b1b1b;
+        border: 1px solid white;
+        color: rgb(184, 184, 184);
+        border-radius: 10px;
+        width: 98%;
+        cursor: pointer;
+        text-decoration: none;
+        text-align: center;
+        font-size: large;
+        padding: 10px;
+        font-weight: 600;
+    }
+
+    .sub_btn:hover{
+        background-color: white;
+        color: #1b1b1b;
+        font-weight: 700;
+
+    }
+  }
+
+  .logo_con{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 15px;
+    margin-top: 40px;
+    padding: 10px;
+  }
+}

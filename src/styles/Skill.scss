@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#skill{
+    z-index: 0;
+    position: relative;
+    top: 100px;
+    // background-color: #1d1d1d;
+    // filter: brightness(1.1);
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    align-items: center;
+    flex-direction: column;
+    cursor: none;
+    
+    a{
+        text-decoration: none;
+        color:  rgb(255, 255, 255);
+    }
+
+    .toggle{
+        z-index: 5;
+        background-color: #1d1d1d;
+        color: white;
+        border: 3px solid rgb(255, 255, 255);
+        font-weight: 500;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        border-radius: 27px;
+        
+
+        .toggle1,.toggle2,.selected{
+            border: 0px solid  rgb(255, 255, 255);
+            padding: 10px;
+        }
+
+        .toggle1{
+            border-radius: 25px 0 0 25px; 
+            
+            border-right: none;
+        }
+        .toggle2{
+            border-radius: 0 25px 25px 0;
+            border-left: none;
+        }
+
+        .selected{
+            border-radius: 25px;
+            border-width: 1px;
+            background: rgb(255, 255, 255);
+            color: #1d1d1d;
+            font-weight: 900;
+            a {
+                color: #1d1d1d;
+            }
+        }
+    }
+
+
+    h2{
+        background-color: white;
+        color: #1d1d1d;
+        font-size: 3rem;
+        padding: 10px 20px;
+        text-align: center;
+        border: 6px solid white;
+        border-radius: 55px;
+        width: 250px;
+        margin-bottom: 20px;
+    }
+
+    .skill_info{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 65vw;
+        @media (max-width: 599px) {
+            width: 80vw;
+        }
+
+        p{
+            font-size: 1.3rem;
+            text-shadow: 0 0 3px white;
+            letter-spacing: 1px;
+            font-weight: 500;
+        }
+
+        .outer-bar{
+            background-color: rgb(78, 78, 78);
+            height: 10px;
+            width: 800px;
+            border-radius: 5px;
+            @media (max-width: 599px) {
+                width: 180px;
+            }
+
+        }
+
+        .inner-bar{
+            background-color: rgb(255, 255, 255);
+            height: 10px;
+            width: 800px;
+            border-radius: 5px;
+            animation:bar 1.5s ease 1;
+            @media (max-width: 599px) {
+                width: 180px;
+            }
+        }
+
+        @keyframes bar {
+            0%{
+                width: 0px;
+            }
+        }
+    }
+}
+
+// .grad{
+//     height: 50px;
+//     background: #1d1d1d;
+//     filter: brightness(1.1);
+//     // background:linear-gradient(#2d2d2d,#1d1d1d) ;
+// }
